@@ -81,12 +81,14 @@
 	<script>
 		function generate()
 		{
-			var number=document.querySelector("#phonenumber").value
-			var text=encodeURIComponent(document.querySelector("#text").value)
+			const number=document.querySelector("#phonenumber").value
+			const text=encodeURIComponent(document.querySelector("#text").value)
 
-			if(number.trim() != '' && text.trim() != '' || number && text)
+			if(number.trim() != '' || number)
 			{
-			var link="https://wa.me/"+number+"/?text="+text;
+			let link="https://wa.me/"+number;
+			if(text.trim() != '' || text)link+="/?text="+text;
+
 			document.querySelector("a").style.display='block';
 			document.querySelector("#result").innerHTML=link;
 			document.querySelector("a").href=link;
