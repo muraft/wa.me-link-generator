@@ -4,4 +4,4 @@ Just fill the receiver number field and the pre-defined message. Then copy the l
 
 **Fill the number field with the country prefix in the beginning**
 
-### You can see the demo [here](https://coolraptor08.github.io/demo/wamegenerator.html)
+### You can see the demo [here](https://muraft.github.io/wa.me-link-generator/)
